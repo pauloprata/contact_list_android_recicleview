@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="15dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/id_photo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        android:contentDescription="@string/bottom_sheet_behavior"
+        tools:src="@tools:sample/avatars"
+
+        >
+
+    </ImageView>
+        <TextView
+            android:id="@+id/id_name"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="60dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/id_photo"
+            app:layout_constraintTop_toTopOf="@+id/id_photo"
+            tools:text="Nome do Contato"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/id_phone"
+            app:layout_constraintTop_toBottomOf="@+id/id_name"
+            app:layout_constraintStart_toEndOf="@+id/id_photo"
+            tools:text="(00) 0000-0000"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
