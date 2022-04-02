@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+<<<<<<< HEAD
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -15,4 +16,16 @@
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintBottom_toBottomOf="parent"
        tools:ignore="MissingConstraints" />
+=======
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycl_produto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+>>>>>>> minha lista de produtos
 </androidx.constraintlayout.widget.ConstraintLayout>

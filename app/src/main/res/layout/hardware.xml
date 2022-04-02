@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hardware"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <ImageView
+     android:id="@+id/fotoproduto"
+     android:layout_width="120dp"
+     android:layout_height="120dp"
+     android:src="@drawable/gabinete"
+     android:layout_margin="10dp"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/nomeproduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gabinte game"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toEndOf="@id/fotoproduto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/descricaoproduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dggggggggggggggggggggggggggdfdgd"
+        android:textSize="16sp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="4"
+        app:layout_constraintTop_toBottomOf="@id/nomeproduto"
+        app:layout_constraintStart_toEndOf="@id/fotoproduto"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/precoproduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 400,00"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintTop_toBottomOf="@id/descricaoproduto"
+        app:layout_constraintStart_toEndOf="@id/fotoproduto" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

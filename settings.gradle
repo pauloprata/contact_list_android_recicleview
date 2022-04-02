@@ -12,5 +12,9 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+<<<<<<< HEAD
 rootProject.name = "AppListContact"
+=======
+rootProject.name = "ListaProduto"
+>>>>>>> minha lista de produtos
 include ':app'
